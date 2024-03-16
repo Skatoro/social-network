@@ -1,0 +1,85 @@
+.container{
+    border-right: 1px solid var(--primary-border-color);
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.wrapper{
+    flex-grow: 1;
+    flex-basis: 1px;
+}
+.dialogName{
+    position: sticky;
+    font-size: 17px;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    line-height: 20px;
+    height: 53px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 1px solid var(--primary-border-color);
+    margin-bottom: 16px;
+    padding: 0 16px;
+}
+.selectMessage{
+    color: var(--primary-text-color);
+    font-size: 31px;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.stickyTabHeader{
+    height: 0;
+}
+.messagesElementsContainer{
+    flex-basis: 1px;
+    height: 100%;
+    flex-grow: 1;
+    overflow-x: hidden;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    color-scheme: var(--color-scheme);
+}
+.messagesElementsWrapper{
+}
+.messagesElements{
+    height: 1px;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+    padding: 53px 16px 0;
+    overflow-y: auto;
+}
+.messagesOpponentPreview{
+    padding: 20px 16px;
+    color: var(--primary-text-color);
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: default;
+    border-bottom: 1px solid var(--primary-border-color);
+    margin-bottom: 16px;
+}
+.messagesOpponentPreview img{
+    height: 64px;
+    width: 64px;
+    border-radius: 9999px;
+}
+.messagesOpponentPreview span:hover{
+    text-decoration: underline;
+}

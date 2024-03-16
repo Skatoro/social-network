@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+[data-theme="dark"] {
+  --primary-background-color: rgba(0, 0, 0, 1);
+  --secondary-background-color: rgb(239, 243, 244);
+  --hover-button-background-color: rgba(239, 243, 244, 0.1);
+  --primary-text-color: rgb(231, 233, 234);
+  --secondary-text-color: rgb(113, 118, 123);
+  --tertiary-text-color: rgb(15, 20, 25);
+  --primary-border-color: rgb(47, 51, 54);
+  --secondary-border-color: rgb(51, 54, 57);
+  --profile-top-blurred: rgba(0, 0, 0, 0.65);
+  --background-prevent-blur: rgba(91, 112, 131, 0.4);
+  --color-scheme: dark;
+  --box-shadow: rgba(255, 255, 255, 0.2) 0 0 15px, rgba(255, 255, 255, 0.15) 0 0 3px 1px;
+  --option-shadow: rgba(255, 255, 255, 0.03);
+  --message-background-color: rgba(29, 155, 240, 1.00);
+  --send-message-background-color: rgb(32, 35, 39);
+  --scrollbar-color: rgb(62, 65, 68) rgb(22, 24, 28);
+  --dialog-item-background-hover: rgb(22, 24, 28);
+  --reversed-button-background-hover: rgb(215, 219, 220);
+  --unfollow-border: rgb(103, 7, 15);
+}
+
+[data-theme="light"] {
+  --primary-background-color: rgba(255, 255, 255, 1);
+  --secondary-background-color: rgb(15, 20, 25);
+  --hover-button-background-color: rgba(15, 20, 25, 0.1);
+  --primary-text-color: rgb(15, 20, 25);
+  --secondary-text-color: rgb(83, 100, 113);
+  --tertiary-text-color: rgb(255, 255, 255);
+  --primary-border-color: rgba(239, 243, 244, 1.00);
+  --secondary-border-color: rgb(207, 217, 222);
+  --background-prevent-blur: rgba(0, 0, 0, 0.4);
+  --profile-top-blurred: rgba(255, 255, 255, 0.65);
+  --color-scheme: light;
+  --box-shadow: 0 0 15px rgba(101, 119, 134, 0.2), 0 0 3px 1px rgba(101, 119, 134, 0.15);
+  --option-shadow: rgba(0, 0, 0, 0.03);
+  --message-background-color: rgba(0, 131, 235, 1.00);
+  --send-message-background-color: rgba(239, 243, 244, 1.00);
+  --scrollbar-color: rgb(185, 202, 211) rgb(247, 249, 249);
+  --dialog-item-background-hover: rgb(29, 155, 240, 0.1);
+  --reversed-button-background-hover: rgb(39, 44, 48);
+  --unfollow-border: rgb(253, 201, 206);
+}
+
+:root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--primary-background-color);
+  transition: background-color 0.2s ease-in-out;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+  -webkit-background-clip: text;
+}
+body::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+

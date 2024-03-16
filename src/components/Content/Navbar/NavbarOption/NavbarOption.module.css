@@ -1,0 +1,35 @@
+
+.container{
+    display: flex;
+    justify-content: start;
+    padding-top: 4px;
+    width: 100%;
+    padding-bottom: 4px;
+    font-weight: 400;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+.container:hover .wrapper{
+    background: var(--hover-button-background-color);
+}
+.container.active{
+    font-weight: 700;
+}
+.wrapper{
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 12px;
+}
+@media only screen and (max-width: 1250px) {
+    .titleWrapper{
+        display: none;
+    }
+}
+.titleWrapper{
+    margin-left: 20px;
+    margin-right: 16px;
+}

@@ -1,0 +1,11 @@
+
+.addPhotoIcon {
+    display: inline-block;
+    overflow: visible !important;
+    vertical-align: text-bottom;
+    fill: currentColor;
+    height: 22px;
+}
+.addPhotoIcon path{
+    color: rgb(255, 255, 255);
+}

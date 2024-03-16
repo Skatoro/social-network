@@ -1,0 +1,59 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: none;
+    width: 100%;
+    padding: 8px 0 4px 0;
+    background-color: var(--primary-background-color);
+    border-top: 1px solid var(--primary-border-color);
+    flex-shrink: 0;
+}
+.wrapper{
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-items: center;
+    border-radius: 16px;
+    background-color: var(--send-message-background-color);
+    padding: 4px;
+    overflow: hidden;
+    margin: 4px 12px;
+    width: calc(100% - 24px);
+    height: 100%;
+}
+.messageTextarea{
+    color-scheme: var(--color-scheme);
+    scrollbar-color: var(--scrollbar-color);
+    min-height: 20px;
+    max-height: 160px;
+    height: 0;
+    resize: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--primary-text-color);
+    line-height: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 4px 12px;
+    border: none;
+    font-family: inherit;
+    width: 100%;
+}
+.messageTextarea:focus{
+    outline: none;
+}
+.messageTextarea::placeholder{
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 400;
+    user-select: none;
+}
+.sendButton{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+}
+.isEmpty{
+    opacity: 0.5;
+    cursor: default;
+}

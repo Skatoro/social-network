@@ -1,0 +1,117 @@
+
+.postContainer{
+    padding: 4px 16px 0 16px;
+    box-sizing: border-box;
+    display: block;
+    border-bottom: 1px var(--primary-border-color) solid ;
+}
+.postWrapper{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+
+}
+.pinnedIndicator{
+    color: var(--secondary-text-color);
+    font-size: 13px;
+    font-weight: 700;
+    padding-top: 4px;
+    margin-left: 26px;
+}
+.profilePictureColumn{
+    min-width: 40px;
+    width: 40px;
+    padding-top: 8px;
+    margin-right: 12px;
+}
+.profilePictureColumn img{
+    width: 100%;
+    border-radius: 100%;
+    user-select: none;
+}
+.dataColumn{
+    width: 100%;
+    box-sizing: border-box;
+}
+.likeContainer{
+    width: fit-content;
+}
+.likeWrapper{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.likeCounter{
+    font-size: 13px;
+    color: var(--secondary-text-color);
+    margin-left: -5px;
+    user-select: none;
+}
+.likeCounter span{
+    color: inherit;
+}
+.liked{
+    color: rgb(249, 24, 128);
+}
+.textContainer{
+    font-size: 15px;
+    min-width: 0;
+    box-sizing: border-box;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    word-break: break-word;
+    margin-bottom: 4px;
+    white-space: pre-wrap;
+}
+.topPanel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.closeOptionsBg{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+    display: none;
+}
+.displayBlock{
+    display: block !important;
+}
+.optionsWrapper{
+    position: relative;
+    user-select: none;
+}
+.options{
+    user-select: none;
+    position: absolute;
+    display: none;
+    background: var(--primary-background-color);
+    top: -150%;
+    right: 0;
+    z-index: 2;
+    max-width: 380px;
+    border-radius: 12px;
+    box-shadow: var(--box-shadow);
+}
+.option{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 12px 16px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    white-space: nowrap;
+    align-items: center;
+    display: flex;
+}
+.optionDelete{
+    color: rgb(244, 33, 46);
+}
+.option:hover{
+    background-color: var(--option-shadow);
+}
