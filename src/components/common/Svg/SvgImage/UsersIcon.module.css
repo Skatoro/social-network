@@ -1,0 +1,13 @@
+.usersIcon {
+    display: inline-block;
+    overflow: visible !important;
+    vertical-align: text-bottom;
+    fill: currentColor;
+    height: 26px;
+    width: 26px;
+}
+.usersIcon path{
+    transition-duration: 0.2s;
+    transition-property: color;
+    color: var(--primary-text-color);
+}
