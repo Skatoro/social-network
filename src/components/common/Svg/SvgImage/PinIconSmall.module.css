@@ -1,0 +1,12 @@
+.pinIconSmall {
+    display: inline-block;
+    overflow: visible !important;
+    vertical-align: text-bottom;
+    fill: currentColor;
+    height: 16px;
+    cursor: pointer;
+    margin-right: 12px;
+}
+.pinIconSmall path{
+    color: var(--secondary-text-color);
+}

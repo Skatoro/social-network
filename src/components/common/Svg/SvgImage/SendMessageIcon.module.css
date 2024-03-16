@@ -1,0 +1,29 @@
+
+.wrapper{
+    width: 35px;
+    height: 35px;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.2s;
+    background: rgba(0, 0, 0, 0);
+}
+.sendMessageIcon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    overflow: visible !important;
+    vertical-align: text-bottom;
+    fill: currentColor;
+    margin-left: 2px;
+}
+.sendMessageIcon path{
+    color: rgb(29, 155, 240);
+}
+.wrapper:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+}
+.disabled:hover{
+    background-color: rgba(0, 0, 0, 0);
+}
