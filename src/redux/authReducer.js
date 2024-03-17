@@ -73,6 +73,7 @@ export const loginThunkCreator = (setError, email, password, rememberMe, captcha
         });
     }
 }
+
 export const getCaptchaURLThunkCreator = () => async (dispatch) => {
     let response = await securityAPI.getCaptchaURL();
     const captchaURL = response.data.url;

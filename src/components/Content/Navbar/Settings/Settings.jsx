@@ -7,7 +7,6 @@ import LogOutIcon from "../../../common/Svg/SvgImage/LogOutIcon";
 import LogInIcon from "../../../common/Svg/SvgImage/LogInIcon";
 
 const Settings = ({setDarkMode, isDarkMode, setSettingsOpened, userName, isAuth, logout}) => {
-
     return (
         <>
             <div className={styles.settingsOverlay}>

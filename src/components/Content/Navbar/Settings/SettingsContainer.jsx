@@ -3,25 +3,22 @@ import React from "react";
 import {compose} from "redux";
 import Settings from "./Settings";
 import {toggleDarkModeActionCreator} from "../../../../redux/app-reducer";
-import {getUserProfileDataThunkCreator} from "../../../../redux/profilePageReducer";
 import {logoutThunkCreator} from "../../../../redux/authReducer";
 
 const SettingsContainer = ({
                                setDarkMode,
                                isDarkMode,
                                setSettingsOpened,
-                               userName,
-                               authorizedUserId,
-                               getUserProfileData,
+                               authUserLogin,
                                isAuth,
                                logout
                            }) => {
-    !userName && getUserProfileData(authorizedUserId)
+
     return (<Settings
         setDarkMode={setDarkMode}
         isDarkMode={isDarkMode}
         setSettingsOpened={setSettingsOpened}
-        userName={userName}
+        userName={authUserLogin}
         isAuth={isAuth}
         logout={logout}
     />)
@@ -30,15 +27,13 @@ const SettingsContainer = ({
 let mapStateToProps = (state) => {
     return {
         isAuth: state.auth.isAuth,
-        userName: state?.profilePage?.profile?.fullName,
-        authorizedUserId: state.auth.userId,
+        authUserLogin: state.auth.login,
         isDarkMode: state.app.isDarkMode,
     }
 }
 
 export default compose(connect(mapStateToProps, {
     setDarkMode: toggleDarkModeActionCreator,
-    getUserProfileData: getUserProfileDataThunkCreator,
     logout: logoutThunkCreator,
 })(SettingsContainer))
 
