@@ -2,7 +2,7 @@
   "name": "react-redux",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://skatoro.github.io/Social-Network",
+  "homepage": "https://skatoro.github.io/social-network",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
