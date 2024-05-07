@@ -104,13 +104,9 @@ const ProfileDataForm = ({profile, status, goToNonEditMode, saveProfile, savePro
         </div>
         <div className={styles.commentary}>
             К сожалению из-за особенностей API сервера, фотография сразу сохраняется при ее выборе.
-            Сохранять фотку только по нажатию кнопки Save не получилось. Пожалуйста попробуйте потыкать пустые поля,
-            попробовать валидацию, особенно "имени" и тд.
         </div>
         <div className={styles.commentary}>
             Unfortunately, due to server API nature, photo saves immediately after selecting file.
-            It is not possible to save photo only after pressing Save button. Please try touching the empty fields, try
-            validation, especially on "name" and so on.
         </div>
     </form>)
 }
